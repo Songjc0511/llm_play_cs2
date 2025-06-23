@@ -1,0 +1,162 @@
+[
+    {
+        "Areas": [
+            "b_site",
+            "sand_land"
+        ],
+        "ConnectionPointPosition": [
+            -1255.254272,
+            2266.796387
+        ]
+    },
+    {
+        "Areas": [
+            "b_site",
+            "b_tunnel"
+        ],
+        "ConnectionPointPosition": [
+            -1979.762451,
+            1789.30481
+        ]
+    },
+    {
+        "Areas": [
+            "b_tunnel",
+            "b_2"
+        ],
+        "ConnectionPointPosition": [
+            -1986.873535,
+            1566.549805
+        ]
+    },
+    {
+        "Areas": [
+            "b_2",
+            "back_yard"
+        ],
+        "ConnectionPointPosition": [
+            -1646.611328,
+            829.625916
+        ]
+    },
+    {
+        "Areas": [
+            "t_spawn",
+            "back_yard"
+        ],
+        "ConnectionPointPosition": [
+            -1885.177124,
+            -105.986755
+        ]
+    },
+    {
+        "Areas": [
+            "b1",
+            "b_2"
+        ],
+        "ConnectionPointPosition": [
+            -1253.217163,
+            1078.396118
+        ]
+    },
+    {
+        "Areas": [
+            "sand_land",
+            "ct_spawn"
+        ],
+        "ConnectionPointPosition": [
+            -419.806763,
+            2144.510986
+        ]
+    },
+    {
+        "Areas": [
+            "ct_spawn",
+            "a_long"
+        ],
+        "ConnectionPointPosition": [
+            1096.00,
+            2162.461914
+        ]
+    },
+    {
+        "Areas": [
+            "a_long",
+            "a_pit"
+        ],
+        "ConnectionPointPosition": [
+            1635.509888,
+            728.658203
+        ]
+    },
+    {
+        "Areas": [
+            "a_door_outside",
+            "a_pit"
+        ],
+        "ConnectionPointPosition": [
+            1635.509888,
+            728.658203
+        ]
+    },
+    {
+        "Areas": [
+            "a_long",
+            "a_door_outside"
+        ],
+        "ConnectionPointPosition": [
+            793.847961,
+            947.835938
+        ]
+    },
+    {
+        "Areas": [
+            "a_door_outside",
+            "a_door"
+        ],
+        "ConnectionPointPosition": [
+            784.134949,
+            908.623291
+        ]
+    },
+    {
+        "Areas": [
+            "a_door",
+            "a_door_t_spawn"
+        ],
+        "ConnectionPointPosition": [
+            683.67749,
+            483.122131
+        ]
+    },
+    {
+        "Areas": [
+            "a_door_t_spawn",
+            "mid_far"
+        ],
+        "ConnectionPointPosition": [
+            509.509766,
+            -17.599304
+        ]
+    },
+    {
+        "Areas": [
+            "mid_far",
+            "mid_far"
+        ],
+        "ConnectionPointPosition": [
+            -157.617432,
+            1141.531982
+        ]
+    },
+    {
+        "Areas": [
+            "mid_far",
+            "a_cat"
+        ],
+        "ConnectionPointPosition": [
+            -157.617432,
+            1141.531982
+        ]
+    }
+]
