@@ -4,7 +4,7 @@ import time
 import threading
 from queue import Queue
 
-
+from chat import get_target_area
 from move.aim_target_point import get_target_point_direction
 from move.get_viewangle import move_mouse_to_angle
 from move.getpos import get_pos
@@ -15,6 +15,12 @@ import pymem
 import keyboard
 import websockets
 dwViewAngles = 27743776
+
+def read_gsi_data():
+    with open('gsi.json', 'r') as f:
+        data = json.load(f)
+        phrase, round, if_have_c4, money = data['phrase'], data['round'], data['if_have_c4'], data['money']
+    return phrase, round, if_have_c4, money
 
 
 def normalize_angle(angle):
@@ -51,7 +57,8 @@ def mouse_movement_thread(movement_queue):
                 
         time.sleep(0.001)  # 小延迟以避免过度占用CPU
 
-async def main(target_area):
+async def main():
+    target_area = None
     path = []
     # 创建鼠标移动队列和线程
     movement_queue = Queue()
@@ -72,15 +79,18 @@ async def main(target_area):
     current_segment = 0  # 当前路径段索引
     
     async with websockets.connect("ws://192.168.124.37:6001/ws/area") as websocket:
-
+        
     
         while True:
             if keyboard.is_pressed("m"):
                 break
             pyautogui.keyDown("w")
             pyautogui.press("j")
-            
+            phrase, round, if_have_c4, money = read_gsi_data()
             current_X, current_Y, current_Z = get_pos()
+            if not target_area:
+                target_area = 
+
             await websocket.send(json.dumps({"type":"get_current_area_name","x": current_X, "y": current_Y, "z": current_Z}))
             current_area = await websocket.recv()
             json_response = json.loads(current_area)
@@ -202,7 +212,7 @@ async def main(target_area):
 
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(main("a_site".strip()))
+    asyncio.run(main())
     # wjmain("b_site".strip())
         
         
